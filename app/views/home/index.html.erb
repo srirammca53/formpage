@@ -1,0 +1,55 @@
+
+<center>
+<h1>FORM PAGE </h1>
+<hr/>
+<%= form_tag("home/reg", :method => "post") do  %>
+
+  <div>
+    <%= label_tag(:UserName, "user name") %>
+    <%= text_field_tag(:UserName) %>
+  </div>
+<br/>
+  <div>
+   <%= label_tag(:Select_Password, "Select password") %>
+    <%= password_field_tag(:Select_Password) %>
+  </div>
+<br/>
+  <div>
+    <%= label_tag(:Confirm_password, "Confirm password") %>
+    <%= password_field_tag(:Confirm_password) %>
+  </div>
+<br/>
+  <div>
+    <%= label_tag(:Age, "Age" )%>
+    <%= text_field_tag(:Age) %>
+  </div>
+<br/>
+  <div>
+   <%= label_tag(:Email_id, "Email_id") %>
+    <%= text_field_tag(:Email_id) %>
+  </div>
+  <br/>
+  
+  <div>
+  <%= label_tag(:Languages, "Languages") %>
+
+  <%= check_box_tag(:Languages, "English") %>
+  <%= label_tag(:Languages, "English") %>
+  <%= check_box_tag(:Languages, "Telugu") %>
+  <%= label_tag(:Languages, "Telugu") %>
+</div>
+<br/>
+<div>
+ <%= label_tag(:Gender, "Gender") %>
+<%= radio_button_tag(:Gender, "male") %>
+<%= label_tag(:Gender, "male") %>
+<%= radio_button_tag(:Gender, "Female") %>
+<%= label_tag(:Gender, "female") %>
+</div>
+<br/>
+  <div>
+    <%= submit_tag("submit") %>
+  </div>
+<% end %>
+<hr/>
+</center>

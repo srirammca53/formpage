@@ -1,0 +1,39 @@
+
+
+
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+#header
+     {
+      width:900px;
+      height:80px;
+      background-color:black;
+      border:1px solid black;
+      position:absolute;
+      left:0px;
+      right:0px;
+      top:0px:
+      z-index:2;
+     }
+
+
+#footer
+        {
+         width:900px;
+         height:80px;
+         background-color:green;
+         border:1px solid black; 
+         position:absolute;
+         left:0px;
+         right:0px;
+         top:470px;
+         z-index:8;
+        }
